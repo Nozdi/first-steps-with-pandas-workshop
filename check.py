@@ -9,6 +9,9 @@ import pandas as pd
 print 'pandas:', pd.__version__
 assert pd.__version__[:4] == '0.18'
 
+import scipy
+print 'scipy:', scipy.__version__
+
 import matplotlib as plt
 print 'matplotlib:', plt.__version__
 

@@ -1,25 +1,27 @@
 import platform
-print "Python:", platform.python_version()
+print('Python: ' + platform.python_version())
 assert platform.python_version()[0] == '2'
 
 import numpy as np
-print 'numpy:', np.__version__
+print('numpy: ' + np.__version__)
 
 import pandas as pd
-print 'pandas:', pd.__version__
-assert pd.__version__[:4] == '0.18'
+print('pandas: ' + pd.__version__)
 
 import scipy
-print 'scipy:', scipy.__version__
+print('scipy: ' + scipy.__version__)
+
+import sklearn
+print('scikit-learn: ' + sklearn.__version__)
 
 import matplotlib as plt
-print 'matplotlib:', plt.__version__
+print('matplotlib: ' + plt.__version__)
 
 import flask
-print 'flask:', flask.__version__
+print('flask: ' + flask.__version__)
 
 import jupyter
-print 'jupyter:', jupyter.__version__
+print('jupyter: ' + jupyter.__version__)
 
-print '\nCONGRATULATIONS! If you can see this, things should be fine..'
-print '\nGood luck on the workshop :)'
+print('\nCONGRATULATIONS! If you can see this, things should be fine..')
+print('\nGood luck on the workshop :)')

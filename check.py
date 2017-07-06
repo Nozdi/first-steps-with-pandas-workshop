@@ -1,6 +1,5 @@
 import platform
 print('Python: ' + platform.python_version())
-assert platform.python_version()[0] == '2'
 
 import numpy as np
 print('numpy: ' + np.__version__)

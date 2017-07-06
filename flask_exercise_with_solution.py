@@ -3,7 +3,7 @@ import pandas as pd
 
 app = Flask(__name__)
 
-movies = pd.read_csv('data/movie_metadata.csv')
+movies = pd.read_csv('data/movies.csv')
 
 
 @app.route("/movie-titles")
@@ -15,17 +15,23 @@ def movie_titles():
 
 @app.route("/worst")
 def worst():
-    result = movies.sort_values('imdb_score') \
-        .head(10)[['movie_title', 'imdb_score']]
+    result = (
+        movies.sort_values('imdb_score')
+        .head(10)
+        [['movie_title', 'imdb_score']]
+    )
 
     return serialize(result)
 
 
 @app.route("/best-rated/<int:year>")
 def best_rated(year):
-    result = movies[movies['title_year'] == year] \
-        .sort_values('imdb_score', ascending=False) \
-        .head(10)[['movie_title', 'imdb_score']]
+    result = (
+        movies[movies['title_year'] == year]
+        .sort_values('imdb_score', ascending=False)
+        .head(10)
+        [['movie_title', 'imdb_score']]
+    )
 
     return serialize(result)
 

@@ -10,21 +10,21 @@ app = Flask(__name__)
 @app.route("/movie-titles")
 def movie_titles():
     return jsonify(
-        { 'error': 'Please implement me! I want here a list of movie titles!'}
+        {'error': 'Please implement me! I want here a list of movie titles!'}
     )
 
 
 @app.route("/worst")
 def worst():
     return jsonify(
-        { 'error': 'Please implement me! I want here a list of lowest rated movies ever!'}
+        {'error': 'Please implement me! I want here a list of lowest rated movies ever!'}
     )
 
 
 @app.route("/best-rated/<int:year>")
 def best_rated(year):
     return jsonify(
-        { 'error': 'Please implement me! I want here list of best rated movies in a given year!'}
+        {'error': 'Please implement me! I want here list of best rated movies in a given year!'}
     )
 
 

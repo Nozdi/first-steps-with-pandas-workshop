@@ -1,5 +1,7 @@
 # First steps with pandas - workshop!
 
+[![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/first-steps-with-pandas-workshop)
+
 ## Installation
 
 Before participating in the workshop, please install all necessary libraries.

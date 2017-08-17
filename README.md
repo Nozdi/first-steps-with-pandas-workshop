@@ -21,5 +21,7 @@ After installation, please run:
 ```
 python check.py
 ```
+If you have **any problems** with installation please use [Anaconda Python distribution](https://www.continuum.io/downloads).
+
 
 After performing these steps, you are ready for the workshop :)
